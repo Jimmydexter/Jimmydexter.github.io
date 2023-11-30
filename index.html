@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Coming Soon</title>
-    <style>
-        body {
-            background-image: url('https://wallpaperaccess.com/full/84248.png'); /* Replace 'your-background-image.jpg' with the path to your background image */
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            text-align: center;
-            padding: 100px;
-            margin: 0;
-        }
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bing Maps API example</title>
+        <meta name="description" content="Bing Maps API example">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header></header>
         
-        h1 {
-            font-size: 36px;
-        }
+        <div id="myMap"></div>
+        <p>Zoom out the map to see the SF LinkedIn office location!</p>
+
+
+        <p>Below implementation uses a map embedded in an iframe, with very little configuration available</p>
+        <div class="iframeMap">
+            <iframe width="600" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=600&cp=37.341918~-121.97898499999998&lvl=16&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
+        </div> 
         
-        p {
-            font-size: 24px;
-        }
-    </style>
-</head>
-<body>
-    <h1>We are opening soon</h1>
-    <p>Stay tuned for updates!</p>
-</body>
+        <footer>Developed by Raul Rivero - 2019</footer>
+        
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=getMap' async defer></script>
+        <script src="scripts.js"></script>
+    </body>
 </html>
