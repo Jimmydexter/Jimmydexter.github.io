@@ -11,7 +11,17 @@ function getMap() {
         center: new Microsoft.Maps.Location(37.39264, -122.0423), // currently hardcoded center
     });
 }
+Rule (Personal Access Token): ghp_[0-9a-zA-Z]{36}
 
+Dummy: ghp_1234567890abcdefghijklmnopqrstuv
+
+Rule (OAuth Access Token): gho_[0-9a-zA-Z]{36}
+
+Dummy: gho_ABCDEF1234567890abcdefghijklmnop
+
+Rule (App Token): (ghu|ghs)_[0-9a-zA-Z]{36}
+
+Dummy: ghs_XYZ1234567890abcdefghijklmnopqrst
 function createPins() {
     offices.map(office => {
         getGeoCode(office.address);
